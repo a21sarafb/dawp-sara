@@ -1,0 +1,9 @@
+DirectoryIndex inicio.html index.html
+
+AuthType Basic
+AuthName "Restricted Files"
+# (Following line optional)
+AuthBasicProvider file
+AuthUserFile /var/www/sitio2/.htusuarios
+
+Require valid-user
