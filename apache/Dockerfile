@@ -1,5 +1,5 @@
 FROM debian
-RUN apt update && apt install -y apache2
+RUN apt update && apt install -y apache2 php libapache2-mod-php php-zip php-mbstring php-cli php-common php-curl php-xml php-mysql
 
 EXPOSE 80
 EXPOSE 443

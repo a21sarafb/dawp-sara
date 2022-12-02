@@ -12,7 +12,7 @@ services:
       - ./apache/sitio1.conf:/etc/apache2/sites-enabled/sitio1.conf
       - ./apache/sitio2.conf:/etc/apache2/sites-enabled/sitio2.conf  
       #- ./apache/dir.conf:/etc/apache2/mods-available/dir.conf   
-      - ./sitio1:/app/sitio1
+      - ./sitio1:/app/www/sitio1
       - ./sitio2:/var/www/sitio2      
       - ./tenda:/app/tenda
   # db:
