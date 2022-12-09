@@ -11,6 +11,9 @@ services:
       - ./html:/var/www/html
       - ./apache/sitio1.conf:/etc/apache2/sites-enabled/sitio1.conf
       - ./apache/sitio2.conf:/etc/apache2/sites-enabled/sitio2.conf  
+      - ./apache/sitio2-ssl.conf:/etc/apache2/sites-enabled/sitio2-ssl.conf       
+      - ./apache/server.pem:/etc/ssl/certs/server.pem
+      - ./apache/server.key:/etc/ssl/private/server.key
       #- ./apache/dir.conf:/etc/apache2/mods-available/dir.conf   
       - ./sitio1:/app/www/sitio1
       - ./sitio2:/var/www/sitio2      
